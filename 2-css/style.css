@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 1000px;
+}
+
+/* TAG  */
+/* h1{
+    color: blueviolet;
+} */
+
+/* ID */
+#title-3{
+    color: orangered;
+}
+
+/* CLASS */
+.items{
+    color: blue;
+}
+
+.color{
+    /* background-color: red; */
+    color: blue;
+}
+
+.color-2{
+    background-color: #0B11AC;
+    color: red;
+}
+
+.color-3{
+    color: rgba(210, 105, 30, 1);
+}
+
+.box{
+  background-color: grey;
+  border: 5px solid green;
+  /* padding: 50px; */
+  /* padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-bottom: 200px; */
+  /* TOP AND BOTTOM and LEFT AND RIGHT */
+  /* padding: 50px 100px; */
+
+  /* TOP, RIGHT, BOTTOM ,LEFT */
+  /* padding: 50px 100px 150px 200px; */
+}
+
+.box-1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.box-2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 50px;
+}
+
+.position-box{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    /* position: static; */
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+
+.child-box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* position: absolute; */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#name{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    color: #ffffff;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    margin-top: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: orangered;
+}
+
+button:active{
+    background-color: green;
+}
+
+.list{
+    background-color: black;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.list-1{
+    background-color: blue;
+}
+
+.list-2{
+    background-color: red;
+}
+
+.test p:nth-child(1){
+    background-color: black;
+    color: #ffffff;
+}
+
+.test p:nth-child(2){
+    background-color: red;
+    color: #ffffff;
+}
+
+.test p:nth-child(3){
+    background-color: blue;
+    color: #ffffff;
+}
+
