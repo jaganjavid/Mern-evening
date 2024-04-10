@@ -89,3 +89,103 @@ header{
     padding: 15px 30px;
     border-radius: 15px;
 }
+
+
+
+.jobs{
+    padding: 100px 0px;
+}
+
+.jobs-wrapper{
+    display: flex;
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.jobs-wrapper>div{
+    padding: 25px;
+    color: #ffffff;
+    border-radius: 15px;
+
+}
+
+.jobs-wrapper>div>div{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.jobs-wrapper>div>div a{
+    border: 1px solid #ffffff;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: transparent;
+    transition:all .30s;
+}
+
+.jobs-wrapper>div>div a:hover{
+    background-color: #FFA92C;
+}
+
+.jobs-wrapper>div h3{
+   margin: 10px 0px;
+}
+
+.jobs-wrapper>div p{
+    margin: 15px 0px;
+}
+
+.jobs-wrapper>div:nth-child(1){
+    background-color: #0C445C;
+}
+.jobs-wrapper>div:nth-child(2){
+   background-color: #5B2C98;
+}
+.jobs-wrapper>div:nth-child(3){
+  background-color: #7F3219;
+}
+
+footer{
+    background-color: #D6D6D6;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.banner h1 span{
+    display: block;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .banner h1{
+        font-size: 35px;
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    .banner-wrapper{
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .banner-wrapper>div{
+        width: 100% !important;
+    }
+
+    .banner h1 span{
+        display: inline;
+    }
+
+    .banner-wrapper>div:first-child>div{
+        justify-content: center;
+    }
+ } 
+
+@media only screen and (max-width: 600px) {
+   .header-wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+}
