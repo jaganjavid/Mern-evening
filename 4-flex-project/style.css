@@ -162,6 +162,11 @@ footer{
         font-size: 35px;
     }
  }
+@media only screen and (max-width: 992px) {
+   .jobs-wrapper{
+     flex-direction: column;
+   }
+ }
 
  @media only screen and (max-width: 768px) {
     .banner-wrapper{
