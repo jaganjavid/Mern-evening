@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1127px;
+}
+
+a,span{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.my-btn{
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.my-btn-outline{
+    border: 1px solid #333333;
+    color: #333333 !important;
+}
+
+.my-btn-solid{
+   background-color: #651FFF;
+   border: 1px solid #651FFF;
+   color: #ffffff !important;
+}
+
+.text-primary-color{
+    color: #651FFF !important;
+}
+
+.banner{
+    padding: 65px 0px 105px 0px;
+    background: url("./img/banner/banner-bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.banner h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+/* Pin start */
+
+.pin{
+    padding: 100px 0px;
+}
+
+.pin h2{
+    font-weight: 700;
+}
+
+.pin p{
+    font-size: 18px;
+}
+
+.pin-wrapper>div>div:last-child>div{
+   box-shadow: 0px 4px 24px 5px #e9e9e9;
+   border-radius: 25px;
+}
+
+.pin-wrapper>div>div:last-child>div>div{
+    position: relative;
+    top: 10px;
+}
+
+.pin-wrapper>div>div:last-child>div>div h3{
+    font-weight: 700;
+}
