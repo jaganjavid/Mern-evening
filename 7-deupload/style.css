@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    max-width: 1127px;
+    max-width: 1135px;
 }
 
 a,span{
@@ -76,3 +76,52 @@ a,span{
 .pin-wrapper>div>div:last-child>div>div h3{
     font-weight: 700;
 }
+
+/* ipsf Start */
+.ipsf{
+    padding: 100px 0px;
+    background-color: #E0F7FA;
+}
+/* ipsf End */
+
+/* steps Start */
+.steps{
+    padding: 60px 0px;
+    background-color: #ffffff;
+    background: url("./img/steps/bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.steps-wrapper>div>div:first-child>div{
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 15px;
+}
+/* steps End */
+
+/* Ready Start */
+.ready{
+    padding: 100px 0px;
+}
+
+.ready-wrapper>div>div{
+  display: flex;
+}
+
+.ready-wrapper>div>div>div{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ready-wrapper>div>div:first-child>div{
+    background-color: #E0F7FA;
+    /* padding: 50px; */
+}
+
+.ready-wrapper>div>div:last-child>div{
+    background-color: #ECECFE;
+    /* padding: 50px; */
+}
+
+
+/* Ready End */
