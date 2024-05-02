@@ -1,69 +1,70 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-ul{
-    list-style: none;padding: 0px;
+ul {
+    list-style: none;
+    padding: 0px;
 }
 
-.sec-heading{
+.sec-heading {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner{
+.banner {
     padding: 150px 0px;
     background-color: #1A284E;
     color: #ffffff;
 }
 
-.ipfs{
+.ipfs {
     padding: 100px 0px;
 }
 
-.ipfs-wrapper>div>div>div{
+.ipfs-wrapper>div>div>div {
     background-color: #ECECFE;
     padding: 20px;
     border-radius: 20px;
 }
 
-.ipfs-wrapper>div>div>div>img{
+.ipfs-wrapper>div>div>div>img {
     margin-bottom: 50px;
 }
 
-.ipfs-wrapper>div>div>div p{
+.ipfs-wrapper>div>div>div p {
     margin: 20px 0px;
 }
 
-.my-badge{
+.my-badge {
     background-color: #ECECFE;
     padding: 10px 20px;
-   
+
 }
 
-.bill{
+.bill {
     color: #838696;
 }
 
-.pricing{
+.pricing {
     padding: 150px 0px 200px 0px;
     position: relative;
 }
 
-.ellipse{
+.ellipse {
     position: absolute;
     right: 0px;
     top: 40%;
     z-index: 4;
 }
 
-.pricing-wrapper>div>div>div{
+.pricing-wrapper>div>div>div {
     position: relative;
     padding: 30px;
     box-shadow: 0px 4px 4px 0px #ececec;
@@ -72,13 +73,13 @@ ul{
     z-index: 5;
 }
 
-.pricing-wrapper>div>div:nth-child(2)>div{
+.pricing-wrapper>div>div:nth-child(2)>div {
     border: 1px solid #333333;
     position: relative;
     overflow: hidden;
 }
 
-.rec{
+.rec {
     background-color: #333333;
     color: #ffffff;
     display: inline-block;
@@ -90,29 +91,53 @@ ul{
     transform: translateX(-50%);
 }
 
-.pricing-wrapper ul li{
+.pricing-wrapper ul li {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
+.store {
+    padding: 100px 0px;
+}
+
+.store-box {
+    text-align: center;
+    position: relative;
+    margin-bottom: 230px;
+}
+
+.line-box {
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    left: 0px;
+    transform: rotate(90deg);
+    height: 2px;
+}
 
 @media only screen and (min-width: 998px) {
-    .ipfs-wrapper>div>div>div{
+    .ipfs-wrapper>div>div>div {
         padding: 50px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .banner{
-        background:url("../img/banner/bg.png") no-repeat center;
+    .banner {
+        background: url("../img/banner/bg.png") no-repeat center;
         background-size: cover;
     }
 
-    .ipfs-wrapper>div>div>div{
+    .ipfs-wrapper>div>div>div {
         height: 100%;
-}
-}
+    }
 
-   
+    .line-box{
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        width: calc(100% - 50%);
+        transform: rotate(0deg);
+    }
+}
