@@ -26,7 +26,7 @@ lists.forEach(function(item){
 })
 
 
-// const arr = [1,2,3];
+const arr = [1,2,3];
 
 // console.log(arr);
 
@@ -34,11 +34,11 @@ lists.forEach(function(item){
 //   console.log(i * 2);
 // }
 
-// arr.forEach(function(number, index, array){
+arr.forEach(function(number, index, array){
 
-//     console.log(number * index);
+    console.log(number * index);
 
-//     console.log(array);
+    // console.log(array);
 
-// })
+})
 
