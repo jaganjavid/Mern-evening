@@ -1,7 +1,11 @@
 
 
 
-const ul = document.querySelector("ul");
-const li = document.querySelector("li");
 
-console.log(ul);
+// const AllList = document.querySelectorAll("li");
+
+
+
+// AllList.forEach(function(element,index,array){
+//     element.remove();
+// })
