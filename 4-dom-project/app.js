@@ -36,30 +36,32 @@ function getTasks(){
         tasks = JSON.parse(localStorage.getItem("tasks"));
     }
 
+    // console.log(tasks);
+
     tasks.forEach(function(item){
-         //   Create a li Element
-    const li = document.createElement("li");
+        //   Create a li Element
+        const li = document.createElement("li");
 
-    // Add class
-    li.className = "collection-item";
+        // Add class
+        li.className = "collection-item";
 
-    // Create a Text node
-    li.appendChild(document.createTextNode(item));
+        // Create a Text node
+        li.innerText = item;
 
-    // Create a a element
-    const link = document.createElement("a");
+        // Create a a element
+        const link = document.createElement("a");
 
-    // Add class to link
-    link.className = "delete-item secondary-content";
+        // Add class to link
+        link.className = "delete-item secondary-content";
 
-    // Add Icon HTML
-    link.innerHTML = `<i class="fa fa-remove"></i>`;
-    
-    // add link to li
-    li.appendChild(link);
+        // Add Icon HTML
+        link.innerHTML = `<i class="fa fa-remove"></i>`;
+        
+        // add link to li
+        li.appendChild(link);
 
-    // Add li to ul
-    taskList.appendChild(li);
+        // Add li to ul
+        taskList.appendChild(li);
     })
 
 }
@@ -81,7 +83,7 @@ function addTask(e){
     li.className = "collection-item";
 
     // Create a Text node
-    li.appendChild(document.createTextNode(taskInput.value));
+    li.innerText = taskInput.value;
 
     // Create a a element
     const link = document.createElement("a");
@@ -138,8 +140,31 @@ function removeTask(e){
     if(e.target.parentElement.className === "delete-item secondary-content"){
         if(confirm("Are you sure")){
             e.target.parentElement.parentElement.remove();
+            removeTaskFromLocalStorage(e.target.parentElement.parentElement.innerText);
         }
     }
+
+}
+
+function removeTaskFromLocalStorage(livalue){
+    
+    let tasks;
+
+    if(localStorage.getItem("tasks") === null){
+        tasks = [];
+    }else{
+        tasks = JSON.parse(localStorage.getItem("tasks"));
+    }
+
+    tasks.forEach(function(item, index) {
+
+        if(livalue === item){
+            tasks.splice(index, 1);
+        }
+
+    })
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 
 }
 
@@ -159,6 +184,13 @@ function clearTask(){
        element.remove();
     })
 
+    clearTaskFromLocalStorage();
+
+}
+
+function clearTaskFromLocalStorage(){
+    // localStorage.clear();
+    localStorage.removeItem("tasks");
 }
 
 
