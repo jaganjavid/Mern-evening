@@ -1,5 +1,6 @@
 
 var person = {
+    // Property
     firstName: "Jagan",
     lastName: "Javid",
     age:27,
@@ -8,6 +9,7 @@ var person = {
         city:"Chennai",
         state: "TN"
     }, 
+    // Method
     getFullName: function(){
         return `${this.firstName} ${this.lastName}`;
     }
